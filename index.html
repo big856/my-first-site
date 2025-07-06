@@ -1,11 +1,61 @@
-me.html
+html
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>我是誰</title>
-  </head>
-  <body>
-    <h1>哈樓~我是陳柏軒</h1>
-    <p>我正在 Sublime Text 寫方程式! 這是我一行一行打得 不是複製喔:)</p>
-  </body>
-</html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>關於我第一個網站這檔事</title>
+  <style>
+    body{
+      background: url('vadim-sadovski-rvkk2qqfE4M-unsplash.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container{
+      background: rgba(225, 225, 225, 0.08);
+      backdrop-filter:blur(6px);
+      padding: 30px;
+      margin: 80px auto;
+      border-radius: 16px;
+      max-width: 600px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    }
+
+    input, textarea{
+      width:100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 6px;
+      border: none;
+      background: rgba(225, 225, 225, 0.2);
+      color: #fff;
+      font-size: 1em;
+    }
+
+    button:hover{
+      background-color:rgba(225, 225, 225, o.4);
+    }
+ </style>
+</head>
+<body>
+<div class="container">
+  <h1>靜觀生命・森林回應</h1>
+  <p> 讓我們從一隻青蛙的凝視開始說話</p>
+
+  <form action="https://formspree.io/f/mldnvpok" method="POST">
+    <input type="hidden" name="_next" value="thankyou.html">
+     <label>你的名字?</label>
+     <input type="text" name="name" required>
+
+     <label>你覺得陳柏軒這個人是怎樣的人?</label>
+     <textarea name="message" required></textarea>
+
+   <button type="submit">送出</button>
+  </form>
+</div>
+</body>
+</html> 
